@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Hack for sdm845 display on R+ which started erroring.
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 TARGET_COMPILE_WITH_MSM_KERNEL := true
@@ -25,8 +30,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := lineageos_b4s4_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 TARGET_NEEDS_DTBOIMAGE := true
-
-BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # Manifests
 DEVICE_MANIFEST_FILE += device/google/bonito/lineage_manifest.xml
