@@ -1,2 +1,0 @@
-# b/149063577
-dontaudit gmscore_app sysfs_msm_subsys:file read;
