@@ -18,15 +18,8 @@ PRODUCT_BRAND := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bonito \
-    PRIVATE_BUILD_DESC="bonito-user 11   release-keys"
+    PRIVATE_BUILD_DESC="bonito-user 11 RQ3A.210705.001 7380771 release-keys"
 
-BUILD_FINGERPRINT := google/bonito/bonito:11/RQ3A.210605.005/7349499:user/release-keys
-
-# H4K3ROM Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Ike Gilbert (Floyd Flivercod III)"
-
-PRODUCT_OVERRIDE_INFO := true
-PRODUCT_OVERRIDE_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+BUILD_FINGERPRINT := google/bonito/bonito:11/RQ3A.210705.001/7380771:user/release-keys
 
 $(call inherit-product, vendor/google/bonito/bonito-vendor.mk)
